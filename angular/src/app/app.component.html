@@ -1,0 +1,58 @@
+<section class="wrapper">
+    <header class="header-bar">
+        <section class="beagle">
+            <img src="../assets/images/beagle-logo.png" alt="Beagle">
+            <h1>Beagle</h1>
+            <p>adoption</p>
+        </section>
+        <section class="user">
+            <h5>Suzane Alves</h5>
+            <span>$1357,88</span>
+            <img src="../assets/images/placeholder-woman.jpg" alt="Suzane Alves">
+            <i class="fas fa-sort-down"></i>
+        </section>
+    </header>
+    <section class="body">
+        <aside class="menu">
+            <nav>
+                <a routerLink="/conta" routerLinkActive="active">
+                    <div class="menu-item">
+                        <i class="far fa-address-card"></i>
+                        <h4>Conta</h4>
+                        <p>Gerencie as formas de acesso</p>
+                    </div>
+                </a>
+                <a routerLink="/perfil" routerLinkActive="active">
+                    <div class="menu-item">
+                        <i class="far fa-user-circle"></i>
+                        <h4>Perfil</h4>
+                        <p>Altere seus dados pessoais</p>
+                    </div>
+                </a>
+                <a routerLink="/transferencias" routerLinkActive="active">
+                    <div class="menu-item">
+                        <i class="far fa-share-square"></i>
+                        <h4>Transferências</h4>
+                        <p>Envie dinheiro para outra conta</p>
+                    </div>
+                </a>
+                <a routerLink="/meios-de-pagamento" routerLinkActive="active">
+                    <div class="menu-item">
+                        <i class="far fa-credit-card"></i>
+                        <h4>Meio de pagamento</h4>
+                        <p>Gerencie seus cartões</p>
+                    </div>
+                </a>
+            </nav>
+        </aside>
+        <main class="content">
+            <section class="router">
+                <router-outlet></router-outlet>
+            </section>
+            <aside class="commercial">
+                <div class="ad"></div>
+                <div class="ad"></div>
+            </aside>
+        </main>        
+    </section>
+</section>

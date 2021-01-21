@@ -1,0 +1,11 @@
+{
+    "_beagleComponent_": "beagle:container",
+    "children": [
+        {
+            "_beagleComponent_": "custom:title",
+            "icon": "far fa-user-circle",
+            "title": "Perfil",
+            "subtitle": "Utilize o formulário abaixo para alterar o seu perfil"
+        }
+    ]
+}

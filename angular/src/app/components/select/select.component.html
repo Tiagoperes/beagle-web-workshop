@@ -1,0 +1,3 @@
+<select class="input-field" [ngModel]="value" (ngModelChange)="onChange($event)">
+    <option *ngFor="let o of options; let i = index" [value]="o">{{ o.label }}</option>
+</select>

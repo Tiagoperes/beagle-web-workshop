@@ -1,0 +1,9 @@
+<div class="group-wrapper">
+    <ul [ngClass]="[direction]">
+        <li *ngFor="let o of options; let i = index">
+            <input id="radio-{{ i }}-{{ o.value }}" type="radio" name="{{ groupName }}" [(ngModel)]="value"
+                [value]="o.value" (change)="onChange(o)">
+            <label for="radio-{{ i }}-{{ o.value }}">{{ o.label }}</label>
+        </li>
+    </ul>
+</div>

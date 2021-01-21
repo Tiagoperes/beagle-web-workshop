@@ -1,0 +1,124 @@
+{
+    "_beagleComponent_": "beagle:container",
+    "children": [
+        {
+            "_beagleComponent_": "custom:title",
+            "icon": "far fa-share-square",
+            "title": "Transferências: passo 1",
+            "subtitle": "Utilize o formulário abaixo para efetuar a transferência"
+        },
+        {
+            "_beagleComponent_": "beagle:container",
+            "styleId": "inputs-row",            
+            "children": [
+                {
+                    "_beagleComponent_": "custom:input-container",
+                    "title": "Tipo de pessoa:",
+                    "children": [
+                        {
+                            "_beagleComponent_": "custom:radio-group",
+                            "groupName": "personType",
+                            "direction": "horizontal",
+                            "options": [
+                                { 
+                                    "label": "Pessoa física (CPF)", 
+                                    "value": 0 
+                                }, 
+                                { 
+                                    "label": "Pessoa jurídica (CNPJ)", 
+                                    "value": 1 
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "_beagleComponent_": "beagle:container",
+            "styleId": "inputs-row",
+            "children": [
+                {
+                    "_beagleComponent_": "custom:input-container",
+                    "title": "CPF:",
+                    "children": [
+                        {
+                            "_beagleComponent_": "beagle:textInput",
+                            "styleId": "input-field"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "_beagleComponent_": "beagle:container",
+            "styleId": "inputs-row",
+            "children": [
+                {
+                    "_beagleComponent_": "custom:input-container",
+                    "title": "Banco:",
+                    "children": [
+                        {
+                            "_beagleComponent_": "custom:select",
+                            "options": [
+                                { 
+                                    "label": "Itaú", 
+                                    "value": 0 
+                                }, 
+                                { 
+                                    "label": "Bradesco", 
+                                    "value": 1 
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "_beagleComponent_": "beagle:container",
+            "styleId": "inputs-row",
+            "style": {
+                "flexDirection": "row"
+            },
+            "children": [
+                {
+                    "_beagleComponent_": "custom:input-container",
+                    "title": "Agência:",
+                    "children": [
+                        {
+                            "_beagleComponent_": "beagle:textInput",
+                            "styleId": "input-field"
+                        }
+                    ]
+                },
+                {
+                    "_beagleComponent_": "custom:input-container",
+                    "title": "Conta:",
+                    "children": [
+                        {
+                            "_beagleComponent_": "beagle:textInput",
+                            "styleId": "input-field"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "_beagleComponent_": "beagle:container",
+            "styleId": "inputs-row",
+            "children": [
+                {
+                    "_beagleComponent_": "custom:input-container",
+                    "title": "Valor:",
+                    "children": [
+                        {
+                            "_beagleComponent_": "custom:money-input",
+                            "value": 1248.57
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

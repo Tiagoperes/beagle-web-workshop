@@ -1,0 +1,26 @@
+.group-wrapper {
+    margin: 0 0 16px 0;
+
+    ul {
+        margin: 12px 0 0 0;
+        padding: 0 0 0 4px;
+        list-style: none;
+        display: flex;
+        gap: 32px;
+
+        &.vertical {
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+
+            label {
+                font-size: 14px;
+                margin: 0 0 0 8px;
+            }
+        }
+    }
+}
