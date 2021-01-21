@@ -16,7 +16,7 @@ export class MoneyInputComponent {
 
     public get value(): number {
         try {
-            return Number(this.valueModel);
+            return Number(this.valueModel.replace(',', '.'));
         } catch (error) {
             console.log(error);
             return 0;

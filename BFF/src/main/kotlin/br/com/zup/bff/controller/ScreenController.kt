@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController
 class ScreenController(
   private val screenBeagleService: ScreenBeagleService
 ) {
-  @GetMapping("/screen")
-  fun getFirstScreen() = screenBeagleService.createScreenBeagle()
+  @GetMapping("/form")
+  fun getFormScreen() = screenBeagleService.createScreenForm()
 
   @GetMapping("/confirm")
   fun getConfirmScreen() = screenBeagleService.createScreenConfirm()
@@ -17,4 +17,12 @@ class ScreenController(
   @GetMapping("/success")
   fun getSuccssScreen() = screenBeagleService.createScreenSuccess()
 
+  @GetMapping("/form-custom")
+  fun getFormScreenCustom() = screenBeagleService.createScreenFormCustom()
+
+  @GetMapping("/confirm-custom")
+  fun getConfirmScreenCustom() = screenBeagleService.createScreenConfirmCustom()
+
+  @GetMapping("/success-custom")
+  fun getSuccssScreenCustom() = screenBeagleService.createScreenSuccessCustom()
 }

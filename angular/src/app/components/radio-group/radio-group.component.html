@@ -1,9 +1,8 @@
 <div class="group-wrapper">
     <ul [ngClass]="[direction]">
         <li *ngFor="let o of options; let i = index">
-            <input id="radio-{{ i }}-{{ o.value }}" type="radio" name="{{ groupName }}" [(ngModel)]="value"
-                [value]="o.value" (change)="onChange(o)">
-            <label for="radio-{{ i }}-{{ o.value }}">{{ o.label }}</label>
+            <input type="radio" name="list_name" (change)="onChange(o)" [checked]="o.value == value" />
+            <label [for]="o.value">{{ o.label }}</label>
         </li>
     </ul>
 </div>

@@ -10,6 +10,6 @@ export class RadioGroupComponent {
     @Input() public groupName: string = '';
     @Input() public options: Option[] = [];
     @Input() public direction?: 'horizontal' | 'vertical' = 'horizontal';
-    @Input() public value: Option = {} as Option;
-    @Input() public onChange: (option: Option) => void = (option: Option) => {};
+    @Input() public value: any = '';
+    @Input() public onChange: (value: any) => void = (value: any) => {};
 }
