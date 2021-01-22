@@ -16,13 +16,4 @@ class ScreenController(
 
   @GetMapping("/success")
   fun getSuccssScreen() = screenBeagleService.createScreenSuccess()
-
-  @GetMapping("/form-custom")
-  fun getFormScreenCustom() = screenBeagleService.createScreenFormCustom()
-
-  @GetMapping("/confirm-custom")
-  fun getConfirmScreenCustom() = screenBeagleService.createScreenConfirmCustom()
-
-  @GetMapping("/success-custom")
-  fun getSuccssScreenCustom() = screenBeagleService.createScreenSuccessCustom()
 }
