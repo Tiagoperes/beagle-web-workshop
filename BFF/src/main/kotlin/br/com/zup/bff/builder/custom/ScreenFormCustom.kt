@@ -2,14 +2,12 @@ package br.com.zup.bff.builder.custom
 
 import br.com.zup.beagle.action.setContext
 import br.com.zup.beagle.action.submitForm
-import br.com.zup.beagle.builder.core.cornerRadius
 import br.com.zup.beagle.builder.widget.size
 import br.com.zup.beagle.core.Style
 import br.com.zup.beagle.ext.applyFlex
 import br.com.zup.beagle.ext.applyStyle
 import br.com.zup.beagle.ext.unitPercent
 import br.com.zup.beagle.ext.unitReal
-import br.com.zup.beagle.widget.action.Action
 import br.com.zup.beagle.widget.action.Navigate
 import br.com.zup.beagle.widget.action.Route
 import br.com.zup.beagle.widget.action.SetContext
@@ -21,6 +19,7 @@ import br.com.zup.beagle.widget.layout.Screen
 import br.com.zup.beagle.widget.layout.ScreenBuilder
 import br.com.zup.beagle.widget.ui.*
 import br.com.zup.bff.widget.*
+import br.com.zup.bff.widget.MaterialInput
 import br.com.zup.bff.widget.model.Option
 
 data class FormData(
@@ -60,11 +59,9 @@ object ScreenFormCustom : ScreenBuilder {
                 )
             ),
 
-            Text(
-                text = "Nome completo:",
-            ),
-            TextInput(
-                placeholder = "",
+            MaterialInput(
+                label = "Nome completo",
+                placeholder = "Digite seu nome",
                 value = "@{form.name}",
                 onChange = listOf(setContext { contextId = "form"; path = "name"; value = "@{onChange.value}" })
             ).applyStyle(
@@ -75,10 +72,8 @@ object ScreenFormCustom : ScreenBuilder {
                 )
             ),
 
-            Text(
-                text = "@{condition(eq('F', form.type), 'CPF:', 'CNPJ:')}",
-            ),
-            TextInput(
+            MaterialInput(
+                label = "@{condition(eq('F', form.type), 'CPF:', 'CNPJ:')}",
                 placeholder = "xxx.xxx.xxx-xx",
                 value = "@{form.document}",
                 onChange = listOf(setContext { contextId = "form"; path = "document"; value = "@{onChange.value}" })
@@ -110,33 +105,21 @@ object ScreenFormCustom : ScreenBuilder {
 
             Container(
                 children = listOf(
-                    Container(
-                        children = listOf(
-                            Text(
-                                text = "Agência:",
-                            ),
-                            TextInput(
-                                placeholder = "Número da Agência",
-                                value = "@{form.branch}",
-                                onChange = listOf(setContext { contextId = "form"; path = "branch"; value = "@{onChange.value}" })
-                            )
-                        )
+                    MaterialInput(
+                        label = "Agência:",
+                        placeholder = "Número da Agência",
+                        value = "@{form.branch}",
+                        onChange = listOf(setContext { contextId = "form"; path = "branch"; value = "@{onChange.value}" })
                     ).applyStyle(
                         Style(
                             size = size { width(48.unitPercent()) }
                         )
                     ),
-                    Container(
-                        children = listOf(
-                            Text(
-                                text = "Conta:",
-                            ),
-                            TextInput(
-                                placeholder = "Número da Conta",
-                                value = "@{form.account}",
-                                onChange = listOf(setContext { contextId = "form"; path = "account"; value = "@{onChange.value}" })
-                            ),
-                        )
+                    MaterialInput(
+                        label = "Conta:",
+                        placeholder = "Número da Conta",
+                        value = "@{form.account}",
+                        onChange = listOf(setContext { contextId = "form"; path = "account"; value = "@{onChange.value}" })
                     ).applyStyle(
                         Style(
                             size = size { width(48.unitPercent()) }
