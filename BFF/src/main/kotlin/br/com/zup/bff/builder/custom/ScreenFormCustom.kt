@@ -165,6 +165,12 @@ object ScreenFormCustom : ScreenBuilder {
                         onPress = listOf(submitForm { })
                     ),
                 )
+            ).applyStyle(
+                Style(
+                    margin = EdgeValue(
+                        top = 30.unitReal()
+                    )
+                )
             ).applyFlex(
                 Flex(
                     flexDirection = FlexDirection.ROW,
