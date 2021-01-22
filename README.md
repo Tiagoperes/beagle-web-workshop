@@ -9,11 +9,27 @@ The objective is to build the following interface using Beagle Angular and the B
 
 ![Interface to build](https://i.ibb.co/Wnhpmhp/beagle-transfer.gif)
 
+# Requirements
+
+## Knowleadges
+
+- Basic Web Development
+- Basic Angular
+- Basic Kotlin
+
+## Tools
+
+- Git
+- VSCode (or any other IDE for web development)
+- IntelliJ (for kotlin development)
+- NodeJS (for running the web project)
+- JDK, JRE (for running the kotlin server)
+
 # Steps
 
 ## Step 0
 This step is not reflected in a branch since it's entirely led by a Beagle Playground Project.
-The project can be found [here](https://playground.usebagle.io/#/demo/web-workshop).
+The project can be found [here](https://playground.usebeagle.io/#/demo/web-workshop).
 
 This project in the Beagle Playground builds a simpler version of the interface we need using only
 default components and no installation of any tool is required.
@@ -93,3 +109,10 @@ This is an extra step that shows how we could use external component libraries.
 
 **Objectives:**
 - Understand how we use the material component to replace the default text input.
+
+# Useful links
+- [Beagle documentation](https://docs.usebeagle.io)
+- [Beagle Angular on NPM](https://www.npmjs.com/package/@zup-it/beagle-angular)
+- [Beagle Angular on Github](https://github.com/ZupIT/beagle-web-angular)
+- [Beagle on Github](https://github.com/ZupIT/beagle)
+- [Beagle Playground](https://playground.usebeagle.io)
