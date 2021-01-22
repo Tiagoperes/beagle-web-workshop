@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
     templateUrl: './transfers.component.html',
     styleUrls: ['./transfers.component.scss']
 })
-export class TransfersComponent {
-    public loadParams = { shouldShowLoading: false };
-}
+export class TransfersComponent {}
