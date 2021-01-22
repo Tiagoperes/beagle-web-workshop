@@ -89,7 +89,7 @@ object ScreenConfirmCustom : ScreenBuilder {
     )),
     children = listOf(
       Text(
-        text = "Aceito trasnferir a quantia de  @{currency(global.transfer.value)} para @{global.transfer.name} (@{global.transfer.document}).",
+        text = "Aceito trasnferir a quantia de  @{global.transfer.value} para @{global.transfer.name} (@{global.transfer.document}).",
       ).applyStyle(
         Style(
           margin = edgeValue { bottom = 20.unitReal() }
