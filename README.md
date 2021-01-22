@@ -29,7 +29,7 @@ The objective is to build the following interface using Beagle Angular and the B
 
 ## Step 0
 This step is not reflected in a branch since it's entirely led by a Beagle Playground Project.
-The project can be found [here](https://playground.usebeagle.io/#/demo/web-workshop).
+The project can be found [here](https://playground.usebeagle.io/#/demo/web-workshop/1-structure.json?platform=angular).
 
 This project in the Beagle Playground builds a simpler version of the interface we need using only
 default components and no installation of any tool is required.
