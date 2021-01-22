@@ -1,8 +1,0 @@
-<div class="group-wrapper">
-    <ul [ngClass]="[direction]">
-        <li *ngFor="let o of options; let i = index">
-            <input type="radio" name="list_name" (change)="onChange(o)" [checked]="o.value == value" />
-            <label [for]="o.value">{{ o.label }}</label>
-        </li>
-    </ul>
-</div>
