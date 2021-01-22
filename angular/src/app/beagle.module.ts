@@ -15,13 +15,6 @@ import { TitleComponent } from './components/title/title.component';
         'custom:radioGroup': RadioGroupComponent,
         'custom:select': SelectComponent,
         'custom:moneyInput': MoneyInputComponent
-    },
-    customOperations: {
-        currency: (value) => 
-            Intl.NumberFormat('pt-BR', {
-                style: 'currency',
-                currency: 'BRL',
-            }).format(value)
     }
 })
 export class Beagle { }
