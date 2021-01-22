@@ -76,7 +76,7 @@ object ScreenFormCustom : ScreenBuilder {
             ),
 
             Text(
-                text = "@{condition(eq('F', form.type), 'CPF:', 'CNPJ:')}",
+                text = "CPF:",
             ),
             TextInput(
                 placeholder = "xxx.xxx.xxx-xx",
