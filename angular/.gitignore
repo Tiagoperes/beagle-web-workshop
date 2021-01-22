@@ -48,3 +48,7 @@ Thumbs.db
 # Beagle
 src/app/.beagle.module.generated.ts
 src/app/.beagle.module.original.ts
+
+# deps
+package-lock.json
+yarn.lock
