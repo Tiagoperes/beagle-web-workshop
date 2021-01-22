@@ -1,8 +1,4 @@
 import { BeagleModule } from '@zup-it/beagle-angular';
-import { MoneyInputComponent } from './components/money-input/money-input.component';
-import { RadioGroupComponent } from './components/radio-group/radio-group.component';
-import { SelectComponent } from './components/select/select.component';
-import { TitleComponent } from './components/title/title.component';
 
 @BeagleModule({
     baseUrl: 'http://localhost:8080/',
@@ -11,10 +7,7 @@ import { TitleComponent } from './components/title/title.component';
         name: 'BeagleComponentsModule',
     },
     components: {
-        'custom:title': TitleComponent,
-        'custom:radioGroup': RadioGroupComponent,
-        'custom:select': SelectComponent,
-        'custom:moneyInput': MoneyInputComponent
+        // place your custom components map here
     }
 })
 export class Beagle { }
