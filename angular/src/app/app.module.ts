@@ -7,7 +7,6 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { TransfersComponent } from './pages/transfers/transfers.component';
 import { PaymentMethodsComponent } from './pages/payment-methods/payment-methods.component';
 import { CommonModule } from '@angular/common';
-import { Beagle } from './beagle.module';
 
 @NgModule({
     declarations: [
@@ -20,8 +19,7 @@ import { Beagle } from './beagle.module';
     imports: [
         CommonModule,
         BrowserModule,
-        AppRoutingModule,
-        Beagle
+        AppRoutingModule
     ],
     providers: [],
     bootstrap: [AppComponent]

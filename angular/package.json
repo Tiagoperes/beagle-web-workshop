@@ -4,11 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "npx beagle view-engine --npm && ng build --prod",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "serve": "npx beagle view-engine --npm && ng serve"
+    "serve": "ng serve"
   },
   "private": true,
   "dependencies": {
@@ -20,7 +20,6 @@
     "@angular/platform-browser": "~11.0.9",
     "@angular/platform-browser-dynamic": "~11.0.9",
     "@angular/router": "~11.0.9",
-    "@zup-it/beagle-angular": "^1.5.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
@@ -31,6 +30,7 @@
     "@angular/compiler-cli": "~11.0.9",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
+    "amd-loader": "latest",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
@@ -42,7 +42,6 @@
     "protractor": "~7.0.0",
     "ts-node": "latest",
     "tslint": "~6.1.0",
-    "typescript": "~4.0.2",
-    "amd-loader": "latest"
+    "typescript": "~4.0.2"
   }
 }

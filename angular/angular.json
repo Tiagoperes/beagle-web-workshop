@@ -33,13 +33,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
-            "fileReplacements": [
-              {
-                "replace": "src/app/beagle.module.ts",
-                "with": "src/app/.beagle.module.generated.ts"
-              }
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -47,10 +41,6 @@
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
-                },
-                {
-                  "replace": "src/app/beagle.module.ts",
-                  "with": "src/app/.beagle.module.generated.ts"
                 }
               ],
               "optimization": true,
