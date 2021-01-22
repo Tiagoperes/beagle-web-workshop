@@ -18,57 +18,14 @@ import br.com.zup.beagle.widget.layout.Container
 import br.com.zup.beagle.widget.layout.Screen
 import br.com.zup.beagle.widget.layout.ScreenBuilder
 import br.com.zup.beagle.widget.ui.*
+import br.com.zup.bff.widget.Title
 import javax.swing.Spring
 
 object ScreenConfirmCustom : ScreenBuilder {
-  private val title = Container(
-    children = listOf(
-      Image(
-        path = ImagePath.Remote("https://i.ibb.co/xCqPw9w/transfer.gif"),
-      ).applyStyle(
-        Style(
-          margin = EdgeValue(
-            right = 15.unitReal()
-          )
-        )
-      ),
-      Container(
-        children = listOf(
-          Text(
-            text = "Transferências: passo 2",
-            textColor = "#0A2C46"
-          ).applyStyle(
-            Style(
-              margin = EdgeValue(
-                right = 5.unitReal()
-              )
-            )
-          ),
-          Text(
-            text = "Confirme a transferência",
-            textColor = "#212121"
-          )
-        )
-      )
-    )
-  ).applyFlex(
-    Flex(
-      flexDirection = FlexDirection.ROW,
-      alignItems = AlignItems.CENTER
-    )
-  )
-
-  private val separator = Container(children = listOf())
-    .applyStyle(
-      Style(
-        size = size { width(100.unitPercent()); height(3.unitReal()) },
-        backgroundColor = "#F1F3F5",
-        cornerRadius = cornerRadius { radius = 3.0 },
-        margin = EdgeValue(
-          vertical = 15.unitReal(),
-        )
-      )
-    )
+  private val title = Title(
+    icon = "far fa-share-square",
+    title = "Transferências: passo 2",
+    subtitle = "Confirme a transferência")
 
   private val form = SimpleForm(
     context = ContextData(id = "password", value = ""),
@@ -143,7 +100,6 @@ object ScreenConfirmCustom : ScreenBuilder {
     child = Container(
       children = listOf(
           title,
-          separator,
           form
         )
       ).applyFlex(
